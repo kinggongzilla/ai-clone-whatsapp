@@ -25,7 +25,7 @@ To prepare your WhatsApp chats for training, follow these steps:
 3. Run ```python data/preprocessing/preprocess.py```. This will convert your raw chats into a format suitable for training and save CSV files to ```data/preprocessing/processed_chats```
 
 ## Start finetune/training
-Run ```python -m finetuning --dataset "custom_dataset" --custom_dataset.file "scripts/custom_dataset.py" --whatsapp_username [insert whatsapp_username]```. Where you replace```[insert whatsapp_username]``` with your name, as it appears in the exported .txt files from WhatsApp.
+Run ```python -m finetuning --dataset "custom_dataset" --custom_dataset.file "scripts/custom_dataset.py" --whatsapp_username "[insert whatsapp_username]"```. Where you replace```[insert whatsapp_username]``` with your name, as it appears in the exported .txt files from WhatsApp.
 
 This will first download the base model from Huggingface, if necessary, and then start a LoRa finetune with 4-bit quantization.
 
