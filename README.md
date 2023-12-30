@@ -31,8 +31,8 @@ This will first download the base model from Huggingface, if necessary, and then
 
 The config for the training can be set in ```configs/training.py```. In particular, you can enable evaluation on the validation set after each epoch by setting ```run_validation: bool=True``` 
 
-# Chatting with your AI clone
-After successful finetuning, run ```python3 commandline_chatbot.py --peft_model [insert checkpoint folder] --model_name mistralai/Mistral-7B-Instruct-v0.2```, where ```[insert checkpoint folder]``` should be replaced with the output directory you specified in ```configs/training.py```. Default is ````checkpoints```folder.
+## Chatting with your AI clone
+After successful finetuning, run ```python3 commandline_chatbot.py --peft_model [insert checkpoint folder] --model_name mistralai/Mistral-7B-Instruct-v0.2```, where ```[insert checkpoint folder]``` should be replaced with the output directory you specified in ```configs/training.py```. Default is ```checkpoints```folder.
 
 Running this command loads the finetuned model and let's you have a conversation with it in the commandline.
 
