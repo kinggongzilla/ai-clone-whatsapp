@@ -1,0 +1,104 @@
+message_id,parent_id,text,date,timestamp,sender
+5JROdGzi,,"<sender>David</sender>Hi, what's up?",21.02.20,15:39:01,David
+plq4cJAz,5JROdGzi,<sender>Luca</sender>Watching a movie right now,21.02.20,15:39:35,Luca
+aRNGtqIM,plq4cJAz,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+c02JJq87,aRNGtqIM,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+yaFrAj4U,c02JJq87,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+2f7897Pg,yaFrAj4U,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+835V2cLB,2f7897Pg,"<sender>David</sender>Yes, I have. It's one of my favorites. I really liked the concept of time dilation and wormholes.",21.02.20,15:42:25,David
+HwfI4N61,835V2cLB,<sender>Luca</sender>Me too. It's very fascinating and mind-blowing. I'm at the part where they land on the water planet.,21.02.20,15:43:05,Luca
+8VfeiGS2,HwfI4N61,"<sender>David</sender>Oh, that's a tense scene. Be careful, there might be a big wave coming.",21.02.20,15:43:35,David
+rzJfOZF2,8VfeiGS2,"<sender>Luca</sender>Haha, thanks for the warning. I'll talk to you later, I don't want to miss anything.",21.02.20,15:44:05,Luca
+GFRkWQBe,rzJfOZF2,"<sender>David</sender>Sure, no problem. Enjoy the movie. Bye for now.",21.02.20,15:44:35,David
+eLpVkolb,GFRkWQBe,"<sender>Luca</sender>Bye, David. Thanks for chatting with me.",21.02.20,15:45:05,Luca
+ZSVY3cpA,eLpVkolb,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+y0PF987a,ZSVY3cpA,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+ltY3whK9,y0PF987a,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+NVHYu3Ys,ltY3whK9,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+QgyfWbSE,NVHYu3Ys,"<sender>David</sender>No, I haven't. What's it about?",21.02.20,15:42:25,David
+qFcFJJwB,QgyfWbSE,<sender>Luca</sender>It's about a team of astronauts who travel through a wormhole in search of a new home for humanity.,21.02.20,15:43:05,Luca
+DNm5v9FQ,qFcFJJwB,"<sender>David</sender>Wow, that sounds interesting. Is it based on a book or something?",21.02.20,15:43:35,David
+6FJFTMPm,DNm5v9FQ,"<sender>Luca</sender>No, it's an original story by Christopher Nolan and his brother Jonathan Nolan.",21.02.20,15:44:05,Luca
+FJbglU1I,6FJFTMPm,<sender>David</sender>I see. They are very talented filmmakers. I liked their other movies like Inception and The Dark Knight.,21.02.20,15:44:35,David
+iBHDkpU9,FJbglU1I,<sender>Luca</sender>Me too. They always have amazing visuals and complex plots.,21.02.20,15:45:05,Luca
+fMs2RWEV,iBHDkpU9,"<sender>David</sender>Yeah, they do. Well, I don't want to disturb you any longer. Enjoy the movie and let me know what you think of it later.",21.02.20,15:45:35,David
+nfEbUWcU,fMs2RWEV,"<sender>Luca</sender>Sure, I will. Thanks for chatting with me, David. Have a nice day.",21.02.20,15:46:05,Luca
+RojIzsoA,nfEbUWcU,"<sender>David</sender>You're welcome, Luca. You too. Bye for now.",21.02.20,15:46:35,David
+etWZqdvi,RojIzsoA,"<sender>Luca</sender>Bye, David. Talk to you soon.[21.02.20, 15:39:01] David: Hi, what's up?",21.02.20,15:47:05,Luca
+kwyOPxpv,etWZqdvi,<sender>Luca</sender>Watching a movie right now,21.02.20,15:39:35,Luca
+wSYzw8kA,kwyOPxpv,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+IiWtzuA9,wSYzw8kA,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+gt6N0g0S,IiWtzuA9,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+v7CELJmz,gt6N0g0S,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+JWg9pCjn,v7CELJmz,"<sender>David</sender>Yes, I have. It's one of my favorites. I really liked the concept of time dilation and wormholes.",21.02.20,15:42:25,David
+SZZ6Wpoc,JWg9pCjn,<sender>Luca</sender>Me too. It's very fascinating and mind-blowing. I'm at the part where they land on the water planet.,21.02.20,15:43:05,Luca
+e9u6OF17,SZZ6Wpoc,"<sender>David</sender>Oh, that's a tense scene. Be careful, there might be a big wave coming.",21.02.20,15:43:35,David
+INAmt1ci,e9u6OF17,"<sender>Luca</sender>Haha, thanks for the warning. I'll talk to you later, I don't want to miss anything.",21.02.20,15:44:05,Luca
+t5w0vnvp,INAmt1ci,"<sender>David</sender>Sure, no problem. Enjoy the movie. Bye for now.",21.02.20,15:44:35,David
+ClLP6QLr,t5w0vnvp,"<sender>Luca</sender>Bye, David. Thanks for chatting with me.",21.02.20,15:45:05,Luca
+XTNjfXso,ClLP6QLr,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+86S9Z6Zd,XTNjfXso,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+x8gBX70b,86S9Z6Zd,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+FpNdZMRb,x8gBX70b,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+AvXCikWX,FpNdZMRb,"<sender>David</sender>No, I haven't. What's it about?",21.02.20,15:42:25,David
+7T0teM51,AvXCikWX,<sender>Luca</sender>It's about a team of astronauts who travel through a wormhole in search of a new home for humanity.,21.02.20,15:43:05,Luca
+lNMuGDvZ,7T0teM51,"<sender>David</sender>Wow, that sounds interesting. Is it based on a book or something?",21.02.20,15:43:35,David
+f3oh4JOM,lNMuGDvZ,"<sender>Luca</sender>No, it's an original story by Christopher Nolan and his brother Jonathan Nolan.",21.02.20,15:44:05,Luca
+U1JMDGDV,f3oh4JOM,<sender>David</sender>I see. They are very talented filmmakers. I liked their other movies like Inception and The Dark Knight.,21.02.20,15:44:35,David
+S23fEeNL,U1JMDGDV,<sender>Luca</sender>Me too. They always have amazing visuals and complex plots.,21.02.20,15:45:05,Luca
+qQaq8NeC,S23fEeNL,"<sender>David</sender>Yeah, they do. Well, I don't want to disturb you any longer. Enjoy the movie and let me know what you think of it later.",21.02.20,15:45:35,David
+Po2xSg2Y,qQaq8NeC,"<sender>Luca</sender>Sure, I will. Thanks for chatting with me, David. Have a nice day.",21.02.20,15:46:05,Luca
+uTIoqm55,Po2xSg2Y,"<sender>David</sender>You're welcome, Luca. You too. Bye for now.",21.02.20,15:46:35,David
+vuzyHhBx,uTIoqm55,"<sender>Luca</sender>Bye, David. Talk to you soon.",21.02.20,15:47:05,Luca
+XiNVN3PR,vuzyHhBx,"<sender>David</sender>Hi, what's up?",21.02.20,15:39:01,David
+a4YtesGf,XiNVN3PR,<sender>Luca</sender>Watching a movie right now,21.02.20,15:39:35,Luca
+DlHk15Qg,a4YtesGf,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+HHT6eykL,DlHk15Qg,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+KVfYangP,HHT6eykL,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+94Yp4PMB,KVfYangP,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+MoDYNa8F,94Yp4PMB,"<sender>David</sender>Yes, I have. It's one of my favorites. I really liked the concept of time dilation and wormholes.",21.02.20,15:42:25,David
+VfNFiCUf,MoDYNa8F,<sender>Luca</sender>Me too. It's very fascinating and mind-blowing. I'm at the part where they land on the water planet.,21.02.20,15:43:05,Luca
+2PY5TCsO,VfNFiCUf,"<sender>David</sender>Oh, that's a tense scene. Be careful, there might be a big wave coming.",21.02.20,15:43:35,David
+yCPNbdDr,2PY5TCsO,"<sender>Luca</sender>Haha, thanks for the warning. I'll talk to you later, I don't want to miss anything.",21.02.20,15:44:05,Luca
+XP7btUpM,yCPNbdDr,"<sender>David</sender>Sure, no problem. Enjoy the movie. Bye for now.",21.02.20,15:44:35,David
+pTD2QORV,XP7btUpM,"<sender>Luca</sender>Bye, David. Thanks for chatting with me.",21.02.20,15:45:05,Luca
+icM1idxp,pTD2QORV,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+MtzxKXKa,icM1idxp,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+nUDn5KHP,MtzxKXKa,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+BzaUrzcC,nUDn5KHP,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+Zt0zVceQ,BzaUrzcC,"<sender>David</sender>No, I haven't. What's it about?",21.02.20,15:42:25,David
+7f1xUuL5,Zt0zVceQ,<sender>Luca</sender>It's about a team of astronauts who travel through a wormhole in search of a new home for humanity.,21.02.20,15:43:05,Luca
+oLtBdsME,7f1xUuL5,"<sender>David</sender>Wow, that sounds interesting. Is it based on a book or something?",21.02.20,15:43:35,David
+fxxltBX3,oLtBdsME,"<sender>Luca</sender>No, it's an original story by Christopher Nolan and his brother Jonathan Nolan.",21.02.20,15:44:05,Luca
+xEfo0Yij,fxxltBX3,<sender>David</sender>I see. They are very talented filmmakers. I liked their other movies like Inception and The Dark Knight.,21.02.20,15:44:35,David
+eRurBRnQ,xEfo0Yij,<sender>Luca</sender>Me too. They always have amazing visuals and complex plots.,21.02.20,15:45:05,Luca
+n9cEDZm8,eRurBRnQ,"<sender>David</sender>Yeah, they do. Well, I don't want to disturb you any longer. Enjoy the movie and let me know what you think of it later.",21.02.20,15:45:35,David
+9GYPDyKw,n9cEDZm8,"<sender>Luca</sender>Sure, I will. Thanks for chatting with me, David. Have a nice day.",21.02.20,15:46:05,Luca
+sWKq1leL,9GYPDyKw,"<sender>David</sender>You're welcome, Luca. You too. Bye for now.",21.02.20,15:46:35,David
+QQlTxQiU,sWKq1leL,"<sender>Luca</sender>Bye, David. Talk to you soon.",21.02.20,15:47:05,Luca
+Jn5vWLx3,QQlTxQiU,"<sender>David</sender>Hi, what's up?",21.02.20,15:39:01,David
+mAieteB9,Jn5vWLx3,<sender>Luca</sender>Watching a movie right now,21.02.20,15:39:35,Luca
+M0XTutHS,mAieteB9,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+snEFEbb2,M0XTutHS,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+uNq9GgWZ,snEFEbb2,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+6pg2TyBv,uNq9GgWZ,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+T45HqJzm,6pg2TyBv,"<sender>David</sender>Yes, I have. It's one of my favorites. I really liked the concept of time dilation and wormholes.",21.02.20,15:42:25,David
+JpEcrQVn,T45HqJzm,<sender>Luca</sender>Me too. It's very fascinating and mind-blowing. I'm at the part where they land on the water planet.,21.02.20,15:43:05,Luca
+phMyHnGK,JpEcrQVn,"<sender>David</sender>Oh, that's a tense scene. Be careful, there might be a big wave coming.",21.02.20,15:43:35,David
+VogPZHZL,phMyHnGK,"<sender>Luca</sender>Haha, thanks for the warning. I'll talk to you later, I don't want to miss anything.",21.02.20,15:44:05,Luca
+Gz5RtsEJ,VogPZHZL,"<sender>David</sender>Sure, no problem. Enjoy the movie. Bye for now.",21.02.20,15:44:35,David
+LzvOQTGJ,Gz5RtsEJ,"<sender>Luca</sender>Bye, David. Thanks for chatting with me.",21.02.20,15:45:05,Luca
+VhnGKBv7,LzvOQTGJ,"<sender>David</sender>Cool, what movie are you watching?",21.02.20,15:40:05,David
+65OV9V4r,VhnGKBv7,<sender>Luca</sender>It's a sci-fi,21.02.20,15:40:45,Luca
+mPeKPlyh,65OV9V4r,<sender>David</sender>I love sci-fi movies. What's the name of it?,21.02.20,15:41:15,David
+X7HCl9QR,mPeKPlyh,<sender>Luca</sender>It's called Interstellar. Have you seen it?,21.02.20,15:41:55,Luca
+cmGx9wFL,X7HCl9QR,"<sender>David</sender>No, I haven't. What's it about?",21.02.20,15:42:25,David
+c3Rb7MnC,cmGx9wFL,<sender>Luca</sender>It's about a team of astronauts who travel through a wormhole in search of a new home for humanity.,21.02.20,15:43:05,Luca
+RD7PNToZ,c3Rb7MnC,"<sender>David</sender>Wow, that sounds interesting. Is it based on a book or something?",21.02.20,15:43:35,David
+NNJH5HgI,RD7PNToZ,"<sender>Luca</sender>No, it's an original story by Christopher Nolan and his brother Jonathan Nolan.",21.02.20,15:44:05,Luca
+44Fw8sqH,NNJH5HgI,<sender>David</sender>I see. They are very talented filmmakers. I liked their other movies like Inception and The Dark Knight.,21.02.20,15:44:35,David
+pMAhgoac,44Fw8sqH,<sender>Luca</sender>Me too. They always have amazing visuals and complex plots.,21.02.20,15:45:05,Luca
+RXVO8KI3,pMAhgoac,"<sender>David</sender>Yeah, they do. Well, I don't want to disturb you any longer. Enjoy the movie and let me know what you think of it later.",21.02.20,15:45:35,David
+QPgc3ycU,RXVO8KI3,"<sender>Luca</sender>Sure, I will. Thanks for chatting with me, David. Have a nice day.",21.02.20,15:46:05,Luca
+fssUCUwh,QPgc3ycU,"<sender>David</sender>You're welcome, Luca. You too. Bye for now.",21.02.20,15:46:35,David
+qLwtW9WC,fssUCUwh,"<sender>Luca</sender>Bye, David. Talk to you soon.",21.02.20,15:47:05,Luca
