@@ -17,12 +17,17 @@ pip install -U pip setuptools
 pip install --extra-index-url https://download.pytorch.org/whl/test/cu118 -e .
 ```
 
+Note: Python 3.12.0 or higher is recommended. Lower versions might run into issues during finetuning.
+
 ## Obtaining and preprocessing your WhatsApp chats
 To prepare your WhatsApp chats for training, follow these steps:
 
 1. Export your WhatsApp chats as .txt files. This can be done directly in the WhatsApp app on your phone, for each chat individually. You can export just one .txt from a single chat or many .txt files from all your chats.
+Unfortunately, formatting seems to vary between regions. I am based on Europe, so the regex in the preprocessing.py might have to be adjusted if you are based in a different region.
 2. Copy the .txt files you exported into ```data/preprocessing/raw_chats/train```. If you want to have a validation set, copy the validation chats into ```data/preprocessing/raw_chats/validation```.
 3. Run ```python data/preprocessing/preprocess.py```. This will convert your raw chats into a format suitable for training and save CSV files to ```data/preprocessing/processed_chats```
+
+
 
 ## Start finetune/training
 Run ```python -m finetuning --dataset "custom_dataset" --custom_dataset.file "scripts/custom_dataset.py" --whatsapp_username "[insert whatsapp_username]"```. Where you replace```[insert whatsapp_username]``` with your name, as it appears in the exported .txt files from WhatsApp. This is necessary to assign the correct role of "assistant" and "user" for training.
