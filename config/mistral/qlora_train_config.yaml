@@ -22,12 +22,10 @@ tokenizer:
   path: model/mistral/original/tokenizer.model
 
 checkpointer:
-  _component_: torchtune.utils.FullModelHFCheckpointer
+  _component_: torchtune.utils.FullModelMetaCheckpointer
   checkpoint_dir: model/mistral/original/
   checkpoint_files: [
-    model-00001-of-00003.bin,
-    model-00002-of-00003.bin,
-    model-00003-of-00003.bin
+    consolidated.00.pth
   ]
   output_dir: model/finetune_checkpoint
   model_type: MISTRAL
