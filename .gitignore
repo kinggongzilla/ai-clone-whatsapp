@@ -1,5 +1,6 @@
-model/*
-!model/finetune_checkpoint/.gitkeep 
+model/original/*
+model/finetune_checkpoint/*
+!model/finetune_checkpoint/.gitkeep
 !model/original/.gitkeep 
 torchtune
 wandb
