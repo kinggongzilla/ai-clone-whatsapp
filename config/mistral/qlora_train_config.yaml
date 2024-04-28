@@ -1,6 +1,6 @@
 # This config assumes that you've run the following command before launching
 # this run:
-#   tune download mistralai/Mistral-7B-Instruct-v0.2 --output-dir model/original/mistral --hf-token <HF_TOKEN>
+#   tune download mistralai/Mistral-7B-Instruct-v0.2 --output-dir model/mistral --hf-token <HF_TOKEN>
 # To launch on a single device, run the following command from root:
 #   tune run lora_finetune_single_device --config config/mistral/qlora_train_config.yaml
 #
@@ -19,11 +19,11 @@ model:
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.mistral.mistral_tokenizer
-  path: model/original/mistral/tokenizer.model
+  path: model/mistral/original/tokenizer.model
 
 checkpointer:
   _component_: torchtune.utils.FullModelHFCheckpointer
-  checkpoint_dir: model/original/mistral/
+  checkpoint_dir: model/mistral/original/
   checkpoint_files: [
     model-00001-of-00003.bin,
     model-00002-of-00003.bin,

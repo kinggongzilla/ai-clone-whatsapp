@@ -24,7 +24,7 @@ seed: 42
 # Tokenizer arguments
 tokenizer:
   _component_: torchtune.models.llama3.llama3_tokenizer
-  path: model/original/tokenizer.model
+  path: model/llama3/original/tokenizer.model
 
 # Generation arguments; defaults taken from gpt-fast
 prompt: "You are an AI clone." # System Prompt

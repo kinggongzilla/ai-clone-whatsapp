@@ -28,7 +28,7 @@ Note that slight modifications to the torchtune library ChatDataset class code w
 
 ## Downloading the base model
 ### Llama3
-Run ```tune download meta-llama/Meta-Llama-3-8B-Instruct --output-dir model/original/llama3 --hf-token <HF_TOKEN>```. Replace <HF_TOKEN> with your hugging face access token. In order to download Llama3 you first need to request access on the Meta Llama3 Huggingface page.
+Run ```tune download meta-llama/Meta-Llama-3-8B-Instruct --output-dir model/llama3 --hf-token <HF_TOKEN>```. Replace <HF_TOKEN> with your hugging face access token. In order to download Llama3 you first need to request access on the Meta Llama3 Huggingface page.
 
 After downloading the output-dir should contain these files:
 * consolidated.00.pth
@@ -36,7 +36,7 @@ After downloading the output-dir should contain these files:
 * tokenizer.model
 
 ### Mistral 7B Instruct
-Run ```tune download mistralai/Mistral-7B-Instruct-v0.2 --output-dir model/original/mistral```. 
+Run ```tune download mistralai/Mistral-7B-Instruct-v0.2 --output-dir model/mistral```. 
 
 After downloading the output-dir should contain these files:
 * config.json
