@@ -1,0 +1,20 @@
+{
+    "conversations": [
+        {
+            "from": "human",
+            "value": "Hi whatsup"
+        },
+        {
+            "from": "gpt",
+            "value": "Hey, I'm good"
+        },
+        {
+            "from": "human",
+            "value": "I'm going to the movies tonight"
+        },
+        {
+            "from": "gpt",
+            "value": "Cool! I'll join you"
+        }
+    ]
+}

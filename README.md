@@ -1,4 +1,4 @@
-# Create an AI clone of yourself from your WhatsApp chats (using Mistral 7B)
+# Create an AI clone of yourself from your WhatsApp chats (using Llama3)
 
 ## About
 This repository lets you create an AI chatbot clone of yourself, using your WhatsApp chats as training data. This repository builds upon the new **torchtune** library for finetuning and inference. 
@@ -21,6 +21,7 @@ Currently supported models are:
 git clone https://github.com/kinggongzilla/torchtune.git
 cd torchtune
 pip install .
+cd ..
 ```
 
 Note that slight modifications to the torchtune library ChatDataset class code were necessary were necessary, hence we're not installing from the official repo. In particular the validate_messages function call is removed, to allow for message threads which are not strictly alternating between human and assistant roles.

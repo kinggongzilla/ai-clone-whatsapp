@@ -1,7 +1,5 @@
-data/preprocessed/*
-data/raw_data/*
-model/finetune_checkpoint/*
-model/original/*
 model/*
+!model/finetune_checkpoint/.gitkeep 
+!model/original/.gitkeep 
 torchtune
 wandb
