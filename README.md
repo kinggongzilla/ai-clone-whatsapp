@@ -1,5 +1,11 @@
 # Create an AI clone of yourself from your WhatsApp chats (using Llama3)
 
+## What's new (April 2024)
+* Completely rewritten with Torchtune library
+* ~30% reduced vRAM usage
+* Much simpler codebase
+* Llama3 support
+
 ## About
 This repository lets you create an AI chatbot clone of yourself, using your WhatsApp chats as training data. This repository builds upon the new **torchtune** library for finetuning and inference. 
 
