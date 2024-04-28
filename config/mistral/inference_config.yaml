@@ -1,0 +1,40 @@
+# Config for running the InferenceRecipe in generate.py to generate output from an LLM
+#
+# This config assumes that you've run the following command before launching
+# this run:
+#   tune run quantize --config config/mistral/quantization.yaml
+#
+# To launch, run the following command from root torchtune directory:
+#    tune run chat.py --config config/mistral/inference_config.yaml
+
+# Model arguments
+model:
+  _component_: torchtune.models.mistral.mistral_7b
+
+checkpointer:
+  _component_: torchtune.utils.FullModelTorchTuneCheckpointer
+  checkpoint_dir: model/finetune_checkpoint
+  checkpoint_files: [
+    hf_model_0001_0-4w.pt
+  ]
+  output_dir: model/finetune_checkpoint
+  model_type: MISTRAL
+
+device: cuda
+dtype: bf16
+
+seed: 42
+
+# Tokenizer arguments
+tokenizer:
+  _component_: torchtune.models.mistral.mistral_tokenizer
+  path: model/original/mistral/tokenizer.model
+
+# Generation arguments; defaults taken from gpt-fast
+max_new_tokens: 4096
+temperature: 0.6 # 0.8 and 0.6 are popular values to try
+top_k: 80
+
+quantizer:
+  _component_: torchtune.utils.quantization.Int4WeightOnlyQuantizer
+  groupsize: 256

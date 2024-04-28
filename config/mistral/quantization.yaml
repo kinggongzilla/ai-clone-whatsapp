@@ -1,0 +1,28 @@
+# Config for QuantizationRecipe in quantize.py
+#
+# To launch, run the following command from root torchtune directory:
+#    tune run quantize --config config/mistral/quantization.yaml
+
+#
+# Model arguments
+model:
+  _component_: torchtune.models.mistral.mistral_7b
+
+checkpointer:
+  _component_: torchtune.utils.FullModelHFCheckpointer
+  checkpoint_dir: model/finetune_checkpoint
+  checkpoint_files: [
+    hf_model_0001_0.pt,
+    hf_model_0002_0.pt,
+    hf_model_0003_0.pt,
+  ]
+  output_dir: model/finetune_checkpoint
+  model_type: MISTRAL
+
+device: cuda
+dtype: bf16
+seed: 1234
+
+quantizer:
+  _component_: torchtune.utils.quantization.Int4WeightOnlyQuantizer
+  groupsize: 256

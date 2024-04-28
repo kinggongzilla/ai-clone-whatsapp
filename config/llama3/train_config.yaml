@@ -1,0 +1,96 @@
+# Config for single device LoRA finetuning in lora_finetune_single_device.py
+# using a Llama3 8B model
+#
+# This config assumes that you've run the following command before launching
+# this run:
+#   tune download meta-llama/Meta-Llama-3-8B-Instruct --output-dir model/original/llama3 --hf-token <HF_TOKEN>
+#
+# To launch on a single device, run the following command from root:
+#   tune run lora_finetune_single_device --config config/train_config.yaml
+#
+# This config works only for training on single device.
+
+
+# Model Arguments
+model:
+  _component_: torchtune.models.llama3.lora_llama3_8b
+  lora_attn_modules: ['q_proj', 'k_proj', 'v_proj', 'output_proj']
+  apply_lora_to_mlp: True
+  apply_lora_to_output: True
+  lora_rank: 8
+  lora_alpha: 16
+
+# Tokenizer
+tokenizer:
+  _component_: torchtune.models.llama3.llama3_tokenizer
+  path: model/original/llama3/tokenizer.model
+
+checkpointer:
+  _component_: torchtune.utils.FullModelMetaCheckpointer
+  checkpoint_dir: model/original/llama3/
+  checkpoint_files: [
+    consolidated.00.pth
+  ]
+  adapter_checkpoint: ../finetune_checkpoint/adapter_0.pt
+  recipe_checkpoint: ../finetune_checkpoint/recipe_state.pt
+  output_dir: model/finetune_checkpoint
+  model_type: LLAMA3
+resume_from_checkpoint: True
+
+# Dataset and Sampler
+dataset:
+  _component_: torchtune.datasets.chat_dataset
+  source: data/preprocessed
+  max_seq_len: 1024
+  conversation_style: sharegpt
+  train_on_input: False
+  split: train
+  
+seed: 42
+shuffle: True
+batch_size: 2
+
+# Optimizer and Scheduler
+optimizer:
+  _component_: torch.optim.AdamW
+  weight_decay: 0.01
+  lr: 3e-4
+lr_scheduler:
+  _component_: torchtune.modules.get_cosine_schedule_with_warmup
+  num_warmup_steps: 100
+
+loss:
+  _component_: torch.nn.CrossEntropyLoss
+
+# Training
+epochs: 2
+max_steps_per_epoch: null
+gradient_accumulation_steps: 32
+compile: False
+
+# Logging
+output_dir: /tmp/lora_finetune_output
+metric_logger:
+  _component_: torchtune.utils.metric_logging.DiskLogger
+  log_dir: ${output_dir}
+log_every_n_steps: 1
+log_peak_memory_stats: False
+
+# To log via Weights and Biases:
+# Create a WandB account and run `wandb login` in your terminal.
+# Then uncomment the following lines:
+# output_dir: /tmp/lora_finetune_output
+# metric_logger:
+#   _component_: torchtune.utils.metric_logging.WandBLogger
+#   project: llama3-clone
+# log_every_n_steps: null
+
+# Environment
+device: cuda
+dtype: bf16
+enable_activation_checkpointing: False
+
+# Profiler (disabled)
+profiler:
+  _component_: torchtune.utils.profiler
+  enabled: False

@@ -1,0 +1,35 @@
+# Config for running the InferenceRecipe in generate.py to generate output from an LLM
+#
+# To launch, run the following command from root torchtune directory:
+#    tune run chat.py --config config/llama3/inference_config.yaml
+
+# Model arguments
+model:
+  _component_: torchtune.models.llama3.llama3_8b
+
+checkpointer:
+  _component_: torchtune.utils.FullModelMetaCheckpointer
+  checkpoint_dir: model/finetune_checkpoint
+  checkpoint_files: [
+    meta_model_0.pt,
+  ]
+  output_dir: model/finetune_checkpoint
+  model_type: LLAMA3
+
+device: cuda
+dtype: bf16
+
+seed: 42
+
+# Tokenizer arguments
+tokenizer:
+  _component_: torchtune.models.llama3.llama3_tokenizer
+  path: model/original/tokenizer.model
+
+# Generation arguments; defaults taken from gpt-fast
+prompt: "You are an AI clone." # System Prompt
+max_new_tokens: 4096
+temperature: 0.2 # 0.8 and 0.6 are popular values to try
+top_k: 10000
+
+quantizer: null
