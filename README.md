@@ -68,7 +68,7 @@ For mistral to fit onto 24GB I first hat to quantize the trained model.
 Running this command loads the finetuned model and let's you have a conversation with it in the commandline.
 
 ## Hardware requirements
-At least 26GB vRAM required for QLoRa Llama3 finetune with 4k context length. I ran the finetune on a RTX 3090.
+Approx 16 GB vRAM required for QLoRa Llama3 finetune with 4k context length. I ran the finetune on a RTX 3090.
 When experimenting with other models, vRAM requirement might vary.
 
 
