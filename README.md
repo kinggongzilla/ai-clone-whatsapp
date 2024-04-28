@@ -66,7 +66,7 @@ Run ```tune run chat.py --config config/llama3/inference_config.yaml```
 You can define your own system prompt by changing the ```prompt``` string in the ```config/llama3/inference_config.py``` file.
 
 ### Mistral
-For mistral to fit onto 24GB I first hat to quantize the trained model. 
+For mistral to fit onto 24GB I first had to quantize the trained model. 
 
 1. Run ```tune run quantize --config config/mistral/quantization.yaml```
 2. Run ```tune run chat.py --config config/mistral/inference_config.yaml```
