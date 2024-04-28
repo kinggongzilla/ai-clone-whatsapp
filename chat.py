@@ -95,9 +95,6 @@ class ChatRecipe:
         #remove automatically appendend end of text token 128001
         if tokens[-1] == 128001:
             tokens = tokens[:-1] 
-        print("------INPUT TOKENIZED MESSAGES------")
-        print(tokens)
-        print(self._tokenizer.decode(tokens))
         model_input = torch.tensor(tokens, dtype=torch.int, device=self._device)
 
         custom_generate_next_token = None
@@ -134,9 +131,6 @@ class ChatRecipe:
             custom_generate_next_token=custom_generate_next_token,
         )
 
-        print("------OUTPUT TOKEN IDs------")
-        print(generated_tokens)
-
         if cfg.checkpointer.model_type == "MISTRAL":
             decoded_tokens = self._tokenizer.decode(generated_tokens)
         else:
@@ -163,16 +157,12 @@ class ChatRecipe:
         while True:
             prompt = input("Enter your prompt: ")
             chat_history.append(Message(role="user", content=prompt))
-            print(chat_history)
             output = self.generate(cfg=cfg, chat_history=chat_history)
-            print("------BEFORE FULL MODEL OUTPUT-----")
-            print(output)
             if cfg.checkpointer.model_type == "MISTRAL":
                 output = output.split('[/INST ')[-1]
             else:
                 output = output.split('<|start_header_id|>assistant<|end_header_id|>\n\n')[-1]
             output = self.remove_eot_id(output)
-            print("------BEFORE SPLIT MODEL OUTPUT-----")
             print(output)
             chat_history.append(Message(role="assistant", content=output))
 
