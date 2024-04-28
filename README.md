@@ -30,7 +30,7 @@ pip install .
 cd ..
 ```
 
-Note that slight modifications to the torchtune library ChatDataset class code were necessary were necessary, hence we're not installing from the official repo. In particular the validate_messages function call is removed, to allow for message threads which are not strictly alternating between human and assistant roles.
+Note that slight modifications to the torchtune library ChatDataset class code were necessary, hence we're not installing from the official repo. In particular the validate_messages function call is removed, to allow for message threads which are not strictly alternating between human and assistant roles.
 
 ## Downloading the base model
 ### Llama3
