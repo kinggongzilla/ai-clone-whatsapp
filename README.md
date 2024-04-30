@@ -9,7 +9,7 @@
 ## About
 This repository lets you create an AI chatbot clone of yourself, using your WhatsApp chats as training data. This repository builds upon the new **torchtune** library for finetuning and inference. 
 
-This repository includes code to:
+It includes code to:
 * Preprocess exported WhatsApp chats into a suitable format for finetuning
 * Finetune a model on your WhatsApp chats, using 4-bit quantized LoRa
 * Chat with your finetuned AI clone, via a commandline interface
