@@ -1,6 +1,6 @@
 # Create an AI clone of yourself from your WhatsApp chats (using Llama3)
 
-Coming Soon:
+## Coming Soon:
 * Hosted application: https://dollyai.app
 
 ## What's new (April 2024)
