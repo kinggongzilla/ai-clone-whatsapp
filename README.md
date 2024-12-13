@@ -3,7 +3,7 @@
 ## Coming Soon:
 * Hosted application: https://dollyai.app
 
-## What's new (April 2024)
+## What's new
 * Completely rewritten with Torchtune library
 * ~30% reduced vRAM usage
 * Much simpler codebase
